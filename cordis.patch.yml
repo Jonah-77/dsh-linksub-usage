@@ -1,0 +1,6 @@
+# dsh-linksub-usage 的插件声明（组合包）。
+# 原来写的是 Android 上的 file:// 绝对路径，迁到 Windows 后改成裸包名：
+# 只要本包放在 <profile>/node_modules/dsh-linksub-usage/，Loader 就能解析到。
+- insert:
+    - id: linksub-usage
+      name: 'dsh-linksub-usage'

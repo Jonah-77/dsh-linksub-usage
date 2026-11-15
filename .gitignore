@@ -1,0 +1,11 @@
+# 本机运行时数据，绝不入库
+credentials.json
+last-good.json
+diag.log
+_probe.py
+
+# 通用
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

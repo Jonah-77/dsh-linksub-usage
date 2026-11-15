@@ -1,0 +1,44 @@
+{
+  "name": "dsh-linksub-usage",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 桌面版插件：在设置页查看 linksub.fun（New API）的余额、用量、令牌与分组计费倍率。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jonah-77/dsh-linksub-usage.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "linksub",
+    "new-api",
+    "usage-dashboard",
+    "bundle"
+  ],
+  "scripts": {
+    "test": "node test/bundle-check.mjs && node test/e2e.mjs && node test/token-mode.mjs && node test/render-full.mjs"
+  }
+}
