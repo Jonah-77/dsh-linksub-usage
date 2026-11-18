@@ -68,7 +68,7 @@
 离线测试用本地模拟服务器复刻真实响应形态，不需要账号也不需要联网：
 
 ```powershell
-$env:ENGINE_NODE_MODULES = "D:\Programs\DeepSeek Harness\resources\app\dsh\node_modules"  # 指向含 @deepseek-ai/cordis 的 node_modules
+$env:ENGINE_NODE_MODULES = "<DSH 安装目录>\resources\app\dsh\node_modules"  # 指向含 @deepseek-ai/cordis 的 node_modules
 $env:DSH_HOME = "<任意临时目录>"
 node test/bundle-check.mjs
 node test/e2e.mjs
